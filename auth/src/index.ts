@@ -1,10 +1,5 @@
-import express from "express";
-
-const app = express();
-
-app.get("*", (req, res) => {
-  res.send("hey");
-});
+/* eslint-disable no-console */
+import app from "./app";
 
 app.listen(8000, () => {
   console.log("listening on port 8000");
